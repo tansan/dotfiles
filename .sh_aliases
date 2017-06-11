@@ -4,6 +4,7 @@ alias s=screen
 alias c="clear"
 # alias s="screen"
 alias t="tmux"
+alias ls="ls --color"
 
 alias :q='exit'
 alias c++="g++ -std=c++0x"

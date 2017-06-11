@@ -148,7 +148,8 @@ else
   
   "NeoBundle 'vim-scripts/wombat'
   "NeoBundle 'vim-scripts/rdark-terminal'
-  NeoBundle 'w0ng/vim-hybrid'
+  "NeoBundle 'w0ng/vim-hybrid'
+  "NeoBundle 'NLKNguyen/papercolor-theme'
   NeoBundle 'cocopon/lightline-hybrid.vim'
   "NeoBundle 'chriskempson/tomorrow-theme'
   "NeoBundle 'ciaranm/inkpot'
@@ -424,17 +425,19 @@ endif
 filetype plugin indent on
 
 " TODO: colorscheme
+set background=dark
 " colorscheme iceberg
 " colorscheme rdark-terminal
 " colorscheme hybrid
 " colorscheme wombat
 " colorscheme Tomorrow-Night
-" colorscheme molokai
+colorscheme molokai
 " colorscheme inkpot
-colorscheme lucius
-LuciusBlack
+" colorscheme lucius
+" colorscheme PaperColor
+" LuciusBlack
 
-hi CursorLine term=underline cterm=underline guibg=NONE
-hi CursorLineNr ctermfg=7
-hi LineNr ctermbg=0 ctermfg=6
-hi clear CursorLine
+"hi CursorLine term=underline cterm=underline guibg=NONE
+"hi CursorLineNr ctermfg=7
+"hi LineNr ctermbg=0 ctermfg=6
+"hi clear CursorLine
