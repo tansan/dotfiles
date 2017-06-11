@@ -1,0 +1,12 @@
+alias v=vim
+alias vr="vim -R"
+alias s=screen
+alias c="clear"
+# alias s="screen"
+alias t="tmux"
+
+alias :q='exit'
+alias c++="g++ -std=c++0x"
+
+alias less="less -S"
+alias getip="curl http://inet-ip.info"

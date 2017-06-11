@@ -1,0 +1,12 @@
+# ------------------------------
+# General Settings
+# ------------------------------
+
+export EDITOR=vim
+# export LANGUAGE="ja_JP.UTF-8"
+# export LANG="${LANGUAGE}"
+# export LC_ALL="${LANGUAGE}"
+export GOPATH=~/myworks/go
+export XDG_CONFIG_HOME=~/.config
+export XDG_CACHE_HOME=~/.cache
+
