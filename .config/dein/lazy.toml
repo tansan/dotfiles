@@ -1,0 +1,37 @@
+[[plugins]]
+repo = 'Shougo/neomru.vim'
+on_source = 'denite.nvim'
+on_path = '.*'
+
+[[plugins]]
+repo = 'Shougo/neoyank.vim'
+on_source = 'denite.nvim'
+on_event = 'TextYankPost'
+
+[[plugins]]
+repo = 'Shougo/unite.vim'
+
+[[plugins]]
+repo = 'Shougo/vimfiler.vim'
+on_cmd = 'VimFilerExplorer'
+hook_add = '''
+	nmap fe :VimFilerExplorer<CR>
+'''
+
+[[plugins]]
+repo = 'vim-scripts/YankRing.vim'
+on_cmd = 'YRShow'
+hook_add = '''
+	let g:yankring_history_dir = '~/.nvim/yankring'
+	nmap ys :YRShow<CR>
+'''
+
+[[plugins]]
+repo = 'tpope/vim-dispatch'
+
+[[plugins]]
+repo = 'janko-m/vim-test'
+depends = ['vim-dispatch']
+hook_add = '''
+	let g:test#strategy = 'dispatch'
+'''
