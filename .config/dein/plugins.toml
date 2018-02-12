@@ -1,0 +1,60 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'tomasr/molokai'
+
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+hook_add = '''
+    let g:lightline = {'colorscheme': 'wombat'}
+'''
+
+[[plugins]]
+repo  = 'cespare/vim-toml'
+
+[[plugins]]
+repo = 'fatih/vim-go'
+
+[[plugins]]
+repo = 'thinca/vim-template'
+hook_add = '''
+	let g:template_basedir = '~/.config'
+	let g:template_free_pattern = 'template'
+
+	autocmd MyAutoCmd User plugin-template-loaded call s:template_keywords()
+	function! s:template_keywords()
+	    silent! %s/<+DATE+>/\=strftime('%Y-%m-%d')/g
+	    silent! %s/<+FILENAME+>/\=expand('%:r')/g
+	endfunction
+
+	autocmd MyAutoCmd User plugin-template-loaded
+	  \   if search('<+CURSOR+>')
+	  \ |   silent! execute 'normal! "_da>'
+	  \ | endif
+'''
+
+[[plugins]]
+repo = 'nathanaelkane/vim-indent-guides'
+hook_add = '''
+    let g:indent_guides_enable_on_vim_startup = 1
+'''
+
+[[plugins]]
+repo = 'w0rp/ale'
+hook_add = '''
+	let g:ale_fixers = {
+		\ 'python': ['autopep8'],
+		\ }
+	let g:ale_fix_on_save = 1
+'''
+
+[[plugins]]
+repo = 'aliev/vim-compiler-python'
+
+[[plugins]]
+repo = 'Shougo/neosnippet.vim'
+
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+depends = ['neosnippet']
