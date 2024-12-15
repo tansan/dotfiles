@@ -10,4 +10,3 @@ alias :q='exit'
 alias c++="g++ -std=c++0x"
 
 alias less="less -S"
-alias getip="curl http://inet-ip.info"
